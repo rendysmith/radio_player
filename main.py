@@ -1,9 +1,13 @@
 import sys
 import vlc
 import mutagen
-from mutagen.mp3 import MP3
 from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QVBoxLayout, QSlider, QLineEdit, QLabel
 from PyQt5.QtCore import Qt
+
+
+from mutagen.mp3 import MP3
+from mutagen.easyid3 import EasyID3
+
 
 class RadioPlayer(QWidget):
     def __init__(self):
